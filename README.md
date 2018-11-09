@@ -11,7 +11,7 @@ Jogo feito com python3 utilizando pygame.
 
 ## Prática
 
-<img src="images/ping-pong.png" align="right" width="300">
+<img src="src/images/ping-pong.png" align="right" width="300">
 
 Vamos precisar instalar:
 
