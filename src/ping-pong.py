@@ -46,6 +46,7 @@ game_over = False
 colisao_chao = False
 win = False
 
+#nao estou usando!
 r = random.randint(0, 255)
 g = random.randint(0, 255)
 b = random.randint(0, 255)
@@ -83,7 +84,7 @@ while not game_over:
 	  rect_x += 5
 	  if rect_x > 532:
 	    rect_x = 540
-    
+
 	#time jogando
 	if ((pygame.time.get_ticks()-t) >= 1000):
 	    sec += 1
@@ -93,8 +94,8 @@ while not game_over:
 	      if colisao_chao == True:
 	      	#stop time
 	        sec-=1
-	      elif sec >= 60: #and colisao_chao == False:
-	    	win = True
+	      elif (sec >= 60):
+              win = True
 
 	x_cor += x_change
 	y_cor += y_change
