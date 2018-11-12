@@ -20,10 +20,12 @@ Vamos precisar instalar:
 
 ### Passos
 
-1. Criar tela, bola, retângulo e tempo de jogo.
+1. Criar tela, retângulo e tempo de jogo.
 2. Mover retângulo e colocar música.
-3. Menu final.
-4. Mover bola.
+3. Menus finals.
+4. Criar e mover bola.
+
+* Framework usado: sublime ou atom.
 
 ## Criadores
 

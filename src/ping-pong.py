@@ -76,7 +76,7 @@ while not game_over:
 	music.play()
 
 	#moving player
-	if key[pygame.K_LEFT]:
+    if key[pygame.K_LEFT]:
 	  rect_x -= 5
 	  if rect_x < 0:
 	    rect_x = 0
