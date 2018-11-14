@@ -105,19 +105,19 @@ while True:
 
     #menu final(rodar codigo)
     if floor_collision == True:
-        display_window.fill(black)
-	music.stop()
-	text_fim = font.render("Game Over!", True, text_color)
-	text_fim_rect = text_fim.get_rect()
-	text_fim_rect.center = (display.get_width()//2, display.get_height()//2)
-	display.blit(text_fim,text_fim_rect)
-	elif win == True:
-	    display_window.fill(black)
-	    music.stop()
-	    text_fim=font.render("You Win!",True,text_color)
-	    text_fim_rect = text_fim.get_rect()
-	    text_fim_rect.center=(display.get_width()//2, display.get_height()//2)
-	    display.blit(text_fim,text_fim_rect)	
+      display_window.fill(black)
+      music.stop()
+      text_fim = font.render("Game Over!", True, text_color)
+      text_fim_rect = text_fim.get_rect()
+      text_fim_rect.center = (display.get_width()//2, display.get_height()//2)
+      display.blit(text_fim,text_fim_rect)
+    elif win == True:
+       display_window.fill(black)
+       music.stop()
+       text_fim=font.render("You Win!",True,text_color)
+       text_fim_rect = text_fim.get_rect()
+       text_fim_rect.center=(display.get_width()//2, display.get_height()//2)
+       display.blit(text_fim,text_fim_rect)
 
     clock.tick(fps)
     pygame.display.update()

@@ -25,7 +25,7 @@ Vamos precisar instalar:
 3. Menus finals.
 4. Criar e mover bola.
 
-* Framework usado: sublime ou atom.
+* Framework usado: Atom(https://atom.io/)
 
 ## Criadores
 
