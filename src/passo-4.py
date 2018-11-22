@@ -15,7 +15,17 @@ def game_init(w,h):
     pygame.display.set_caption("Ping Pong")
     return display
 
-#por função move_player()
+#mover jogador
+def move_player(key, rect_x):
+    if key[pygame.K_LEFT]:
+        rect_x -= 5
+        if rect_x < 0:
+            rect_x = 0
+    if key[pygame.K_RIGHT]:
+        rect_x += 5
+        if rect_x > 532:
+            rect_x = 540
+    return rect_x
 
 width,height = 640, 480
 display = game_init(width,height)
@@ -83,15 +93,17 @@ while True:
 
     music.play()
 
+    rect_x = move_player(key,rect_x)
+
     #movendo o retangulo
-    if key[pygame.K_LEFT]:
-        rect_x -= 5
-        if rect_x < 0:
-            rect_x = 0
-    if key[pygame.K_RIGHT]:
-        rect_x += 5
-        if rect_x > 532:
-            rect_x = 540
+    #if key[pygame.K_LEFT]:
+    #    rect_x -= 5
+    #    if rect_x < 0:
+    #        rect_x = 0
+    #if key[pygame.K_RIGHT]:
+    #    rect_x += 5
+    #    if rect_x > 532:
+    #        rect_x = 540
 
     x_cor += x_change
     y_cor += y_change
