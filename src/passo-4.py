@@ -61,7 +61,7 @@ y_cor = random.randint(15, height - 15)
 # (?)
 x_change = random.randint(3, 7)
 y_change = random.randint(3, 7)
-
+# (?)
 coordinates = []
 
 music = pygame.mixer.Sound('musics/endofline.ogg')
@@ -102,6 +102,7 @@ while True:
     #    if rect_x > 532:
     #        rect_x = 540
 
+    # (?)
     x_cor += x_change
     y_cor += y_change
 
