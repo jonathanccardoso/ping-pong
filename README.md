@@ -5,7 +5,7 @@ Jogo feito com python3 utilizando pygame.
 ## Apresentação
 
 - [PDF](src/#.pdf)
-- [Google Docs](https://#)
+- [Google Docs](https://docs.google.com/presentation/d/1otSEZynSSPI1zCDAzc50ZfjWrFwe4bryoBFrYPZFmDQ/edit?usp=sharing)
 
 ## Prática
 
