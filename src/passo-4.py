@@ -1,5 +1,3 @@
-#Criar e mover bola.
-
 import pygame, sys, time, random
 from pygame.locals import *
 
@@ -32,7 +30,7 @@ display = game_init(width,height)
 #para por na cor da tela
 display_window = pygame.display.set_mode((width, height))
 
-#clock ?
+#clock (?)
 fps = 25
 
 #tempo
@@ -57,10 +55,10 @@ rect_y = 470
 floor_collision = False
 win = False
 
-# bola - cor, mudanca, coordenadas
+# bola - cor, mudanca, coordenadas (?)
 x_cor = random.randint(15, width - 15)
 y_cor = random.randint(15, height - 15)
-
+# (?)
 x_change = random.randint(3, 7)
 y_change = random.randint(3, 7)
 
@@ -80,7 +78,6 @@ while True:
 
     key = pygame.key.get_pressed()
 
-    #tempo - jogando
     if ((pygame.time.get_ticks()-t) >= 1000):
         sec += 1
         t = pygame.time.get_ticks()
@@ -108,10 +105,8 @@ while True:
     x_cor += x_change
     y_cor += y_change
 
-    #fundo preto
     display_window.fill(black)
 
-    #colocar o texto do tempo na tela
     time_text = font.render("Time: " + str(sec) + "s", True, text_color)
     display.blit(time_text,(10,10))
 
@@ -120,11 +115,10 @@ while True:
 	    circle = pygame.draw.circle(display_window, white, (coordinate[0], coordinate[1]), 15, 0)
 
     circle = pygame.draw.circle(display_window, white, (x_cor, y_cor), 15, 0)
+    # testar - circle = pygame.draw.circle(display_window, white, (white, white), 15, 0)
 
-    #retangulo
     rect = pygame.draw.rect(display, white, [rect_x, rect_y, 100, 100])
 
-    #menu final(rodar codigo)
     if floor_collision == True:
       display_window.fill(black)
       music.stop()
@@ -152,7 +146,7 @@ while True:
         floor_collision = True
         y_change = y_change * -1
 
-    clock.tick(fps)
+    clock.tick(fps) #(?)
     pygame.display.update()
-    pygame.display.flip()
-    time.sleep(0.015)
+    pygame.display.flip() #(?)
+    time.sleep(0.015) #(?)

@@ -1,9 +1,6 @@
-#Mover retângulo e colocar música.
-
 import pygame, sys, time, random
 from pygame.locals import *
 
-#tamanho da tela e o nome do jogo
 def game_init(w,h):
     pygame.init()
     #tamanho da tela
@@ -14,19 +11,6 @@ def game_init(w,h):
     #nome do projeto
     pygame.display.set_caption("Ping Pong")
     return display
-
-#def move_player(ship_rect,speed_x):
-#    if key[pygame.K_LEFT]:
-#        rect_x -= 5
-#        if rect_x < 0:
-#            rect_x = 0
-#    if key[pygame.K_RIGHT]:
-#        rect_x += 5
-#        if rect_x > 532:
-#            rect_x = 540
-#    return speed_x,speed_y
-
-#move_player(keys,naverect,ang_nave,vel_x,vel_y)
 
 width,height = 640, 480
 display = game_init(width,height)
@@ -54,7 +38,6 @@ text_color = green
 rect_x = 272
 rect_y = 470
 
-#controle
 floor_collision = False
 win = False
 
@@ -67,6 +50,7 @@ y_change = random.randint(3, 7)
 
 coordinates = []
 
+#musica
 music = pygame.mixer.Sound('musics/endofline.ogg')
 
 while True:
@@ -81,7 +65,6 @@ while True:
 
     key = pygame.key.get_pressed()
 
-    #tempo - jogando
     if ((pygame.time.get_ticks()-t) >= 1000):
         sec += 1
         t = pygame.time.get_ticks()

@@ -1,5 +1,3 @@
-#Mover retângulo e colocar música.
-
 import pygame, sys, time, random
 from pygame.locals import *
 
@@ -15,14 +13,12 @@ def game_init(w,h):
     pygame.display.set_caption("Ping Pong")
     return display
 
-#por função move_player()
-
 width,height = 640, 480
 display = game_init(width,height)
 #para por na cor da tela
 display_window = pygame.display.set_mode((width, height))
 
-#clock ?
+#clock
 fps = 25
 
 #tempo
@@ -70,7 +66,6 @@ while True:
 
     key = pygame.key.get_pressed()
 
-    #tempo - jogando
     if ((pygame.time.get_ticks()-t) >= 1000):
         sec += 1
         t = pygame.time.get_ticks()
@@ -93,17 +88,14 @@ while True:
         if rect_x > 532:
             rect_x = 540
 
-    #fundo preto
     display_window.fill(black)
 
-    #colocar o texto do tempo na tela
     time_text = font.render("Time: " + str(sec) + "s", True, text_color)
     display.blit(time_text,(10,10))
 
-    #retangulo
     rect = pygame.draw.rect(display, white, [rect_x, rect_y, 100, 100])
 
-    #menu final(rodar codigo)
+    #menu finais
     if floor_collision == True:
       display_window.fill(black)
       music.stop()
