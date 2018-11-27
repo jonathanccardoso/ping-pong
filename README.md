@@ -18,7 +18,7 @@ Vamos precisar instalar:
 
 ### Passos
 
-1. [Criar tela, retângulo e tempo de jogo.](src/passo-1.pdf)
+1. [Criar tela, retângulo e tempo de jogo.](src/passo-1.py)
 2. [Mover retângulo e colocar música.](src/passo-2.pdf)
 3. [Menus finals.](src/passo-3.pdf)
 4. [Criar e mover bola.](src/passo-4.pdf)
