@@ -23,6 +23,7 @@ Vamos precisar instalar:
 3. [Menus finals.](src/passo-3.pdf)
 4. [Criar e mover bola.](src/passo-4.pdf)
 
+* RUN python: python3 nome-arquivo.py
 * Framework usado: [Atom](https://atom.io/)
 
 ## Criadores
