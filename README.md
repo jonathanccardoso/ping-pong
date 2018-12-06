@@ -1,11 +1,11 @@
 # Ping Pong
 
-Jogo feito com python3 utilizando pygame.
+Jogo feito com python3 utilizando biblioteca pygame.
 
 ## Apresentação
 
-<!-- - [PDF](src/#.pdf) -->
 - [Google Docs](https://docs.google.com/presentation/d/1otSEZynSSPI1zCDAzc50ZfjWrFwe4bryoBFrYPZFmDQ/edit?usp=sharing)
+- [Vídeo Demonstrativo](https://youtu.be/a3WugDuuEsI)
 
 ## Prática
 
