@@ -24,7 +24,7 @@ Vamos precisar instalar:
 4. [Criar e mover bola.](src/passo-4.pdf)
 
 * RUN python: python3 nome-arquivo.py
-* Framework usado: [Atom](https://atom.io/)
+* IDE usada: [Atom](https://atom.io/)
 
 ## Criadores
 
