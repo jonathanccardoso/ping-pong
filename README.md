@@ -30,7 +30,7 @@ Vamos precisar instalar:
 
 **Jonathan Cardoso**
 
-- <https://linkedin.com/in/jonathan99moura/>
+- <https://www.linkedin.com/in/jonathanccardoso/>
 - <https://github.com/jonathanccardoso>
 
 **Licia Jemima**
